@@ -1,0 +1,15 @@
+.lostPage {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  background: url("../../assets/img/paper-bg.jpg");
+  text-align: center;
+  & h1 {
+    font-size: 140px;
+  }
+  & p {
+    font-size: 28px;
+  }
+}
