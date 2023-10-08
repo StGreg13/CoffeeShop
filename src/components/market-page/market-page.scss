@@ -1,0 +1,131 @@
+.market {
+  .banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 260px;
+    padding-top: 100px;
+    background: url("../src/assets/img/our-coffee.jpg") no-repeat;
+    background-size: cover;
+    text-align: center;
+
+    & h1 {
+      color: #FFF;
+      text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+      font-size: 40px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+  }
+
+  .about {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 80px;
+    justify-content: center;
+    margin-top: 50px;
+    & .img img {
+      margin-bottom: 0;
+    }
+
+    & .text {
+      text-align: center;
+      width: 346px;
+
+      & h2 {
+        color: #000;
+        font-size: 24px;
+        font-weight: 400;
+        margin-bottom: 20px;
+      }
+
+      & p {
+        color: #000;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .market {
+    margin: 0 auto;
+
+    & .search-panel {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      column-gap: 80px;
+      justify-content: center;
+      & .search {
+        display: flex;
+        align-items: baseline;
+        column-gap: 10px;
+
+        & input {
+          text-align: center;
+        }
+      }
+    }
+
+    & .filter {
+      display: flex;
+      align-items: baseline;
+      column-gap: 10px;
+    }
+
+    .items {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      column-gap: 70px;
+      row-gap: 60px;
+      margin: 60px auto;
+      max-width: calc(220px * 3 + 71px * 2);
+
+      & .item {
+        display: flex;
+        width: calc(100% / 3 - 47px);
+        flex-direction: column;
+        text-align: end;
+        padding: 22px;
+        border-radius: 8px;
+        background: #fff;
+        filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.25));
+
+        & .img {
+          width: 150px;
+          height: 150px;
+          margin: 0 auto 14px auto;
+
+          & img {
+            object-fit: contain;
+            height: 100%;
+            width: 100%;
+          }
+        }
+
+        & p.name {
+          color: #000;
+          font-size: 14px;
+          font-weight: 400;
+          margin-bottom: 10px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+
+        & p.cost {
+          color: #000;
+          font-size: 14px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}

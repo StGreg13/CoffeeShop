@@ -1,0 +1,55 @@
+header {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1080px;
+  display: flex;
+
+  & nav{
+    position: absolute;
+    height: 150px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 40px;
+      & a {
+        color: #fff;
+        &:first-child {
+          position: relative;
+          &:before {
+            content: url("./assets/img/coffee-beans-white.svg");
+            position: absolute;
+            top: -23px;
+            left: -30px;
+          }
+        }
+      }
+  }
+}
+footer {
+  margin-top: 80px;
+  text-align: center;
+  & nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 40px;
+
+    & a {
+      color: #000;
+
+      &:first-child {
+        position: relative;
+
+        &:before {
+          content: url("./assets/img/coffee-beans-black.svg");
+          position: absolute;
+          top: -23px;
+          left: -30px;
+        }
+      }
+    }
+  }
+  & img {
+    margin: 45px auto;
+  }
+}

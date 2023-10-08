@@ -1,0 +1,123 @@
+.main {
+  .banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100Vh;
+    background: url("../src/assets/img/desk-791178_1920.jpg") no-repeat;
+    background-size: cover;
+    text-align: center;
+
+    & h1 {
+      color: #FFF;
+      text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+      font-size: 40px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    & img {
+      margin-bottom: 35px;
+    }
+
+    & h2 {
+      color: #FFF;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 60px;
+      margin-bottom: 20px;
+    }
+
+    & button {
+      color: #FFF;
+      font-size: 14px;
+      font-weight: 700;
+      padding: 7px 42px;
+      border-radius: 3px;
+      border: 1px solid #FFF;
+      background: rgba(196, 196, 196, 0.00);
+      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  .about {
+    margin: 80px auto 100px auto;
+    text-align: center;
+    max-width: 589px;
+
+    & h2 {
+      color: #000;
+      font-size: 24px;
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+
+    & img {
+      margin-bottom: 40px;
+    }
+
+    & p {
+      color: #000;
+      text-align: center;
+      font-size: 14px;
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+  }
+
+  .best {
+    background: url("../../assets/img/paper-bg.jpg");
+    padding: 80px 0 110px 0;
+    text-align: center;
+
+    & h2 {
+      color: #000;
+      font-size: 24px;
+      font-weight: 400;
+      margin-bottom: 39px;
+    }
+
+    .items {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      column-gap: 71px;
+
+      & .item {
+        display: flex;
+        flex-direction: column;
+        text-align: end;
+        padding: 22px;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.65);
+
+        & .img {
+          width: 150px;
+          height: 150px;
+          margin: 0 auto 14px auto;
+
+          & img {
+            object-fit: contain;
+            height: 100%;
+            width: 100%;
+          }
+        }
+
+        & p.name {
+          color: #000;
+          font-size: 14px;
+          font-weight: 400;
+          margin-bottom: 10px;
+        }
+
+        & p.cost {
+          color: #000;
+          font-size: 14px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
